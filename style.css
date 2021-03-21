@@ -1,0 +1,66 @@
+@-moz-document domain("news.ycombinator.com") {
+
+    body,
+    #hnmain {
+        background: #000;
+    }
+
+    .comment * {
+        color: #aaa;
+    }
+
+    #hnmain a {
+        color: #888;
+    }
+
+    td[bgcolor="#ff6600"] {
+        background-color: transparent;
+    }
+
+    td[bgcolor="#ff6600"] a {
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .pagetop {
+        color: white;
+    }
+
+    form {
+        opacity: 0.8;
+    }
+
+    .votearrow {
+        background: none;
+        border-left: #aaa 2px solid;
+        border-top: #aaa 2px solid;
+        width: 5px;
+        height: 5px;
+        margin: 4px 6px;
+        padding: 0;
+        transform: rotate(45deg);
+    }
+
+    input[type="text"],
+    /* bottom search bar */
+    form textarea,
+    /* comment */
+    form input[type="submit"]
+
+    /* submit comment */
+        {
+        background-color: #000;
+        color: #FFF;
+        border-style: solid;
+    }
+}
+
+@-moz-document url-prefix("https://news.ycombinator.com/submit"),
+url-prefix("https://news.ycombinator.com/forgot"),
+url-prefix("https://news.ycombinator.com/login") {
+
+    body,
+    a {
+        color: #FFF;
+    }
+
+}
