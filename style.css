@@ -3,14 +3,29 @@
     body,
     #hnmain {
         background: #000;
+        zoom: 1.15;
     }
 
     .comment * {
-        color: #aaa;
+        color: #FFF;
+        zoom: 0.95;
+    }
+
+    #hnmain .title a {
+        color: white !important;
+    }
+
+    #hnmain .subtext>a:last-child {
+        color: white;
     }
 
     #hnmain a {
         color: #888;
+    }
+
+    #hnmain .title a:visited,
+    #hnmain .subtext a:visited {
+        color: #888 !important;
     }
 
     td[bgcolor="#ff6600"] {
@@ -31,8 +46,8 @@
 
     .votearrow {
         background: none;
-        border-left: #aaa 2px solid;
-        border-top: #aaa 2px solid;
+        border-left: 2px solid #aaa;
+        border-top: 2px solid #aaa;
         width: 5px;
         height: 5px;
         margin: 4px 6px;
@@ -40,14 +55,12 @@
         transform: rotate(45deg);
     }
 
-    input[type="text"],
     /* bottom search bar */
-    form textarea,
+    input[type="text"],
     /* comment */
-    form input[type="submit"]
-
+    form textarea,
     /* submit comment */
-        {
+    form input[type="submit"] {
         background-color: #000;
         color: #FFF;
         border-style: solid;
@@ -62,5 +75,4 @@ url-prefix("https://news.ycombinator.com/login") {
     a {
         color: #FFF;
     }
-
 }
